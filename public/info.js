@@ -1,6 +1,3 @@
-// let log=require("console");
-// const axios=require("axios");
-// import { axios } from "axios";
 
 let submit = document.querySelector(".submit");
 submit.addEventListener("click", async function (e) {
@@ -73,7 +70,7 @@ submit.addEventListener("click", async function (e) {
   };
   console.log(farmer_details);
 
-  axios.post("http://localhost:5000/login", farmer_details)
+  axios.post("https://mme-8cus.onrender.com/login", farmer_details)
   .then(function (response) {
     console.log(response+" "+hello)
     })
